@@ -31,7 +31,7 @@
 		<center><?php 
 			echo '<center><h1>Guess The Number</h1></center>';
 			echo '<img src="./images/Guess.jpeg" width="15%"/>';
-			echo '<center><p>The computer generated a random number from 1 to 6. Try to guess it!</p>';
+			echo '<center><p><br>The computer generated a random number from 1 to 6. Try to guess it!</p>';
 			echo "<center><p>Enter your guess below and find out if you were correct.</p>"; 
 		?>
 		<!-- Textfields -->
@@ -45,11 +45,13 @@
 		<?php  
 			if(isset($_POST['enter'])) {  
 				$userGuess = $_POST['guess'];   
-				$ranNumber = rand(1, 6);
+				$ranNumber = rand(1,6);
 				if ($userGuess == $ranNumber) {
-					echo "<br><br>The number was" . $ranNumber . "You correctly guessed the number! Good job.";
+					// If the user guesses the random number
+					echo "<br>The number was " . $ranNumber . ". You correctly guessed the number! Good job.";
 				} else {
-					echo "<br><br>The number was" . $ranNumber ." You did not guess the number. Try again next time.";
+					// If the user doesn't guess the number
+					echo "<br>The number was " . $ranNumber . ". You did not guess the number. Try again next time.";
 				}
 			}
 		?>
