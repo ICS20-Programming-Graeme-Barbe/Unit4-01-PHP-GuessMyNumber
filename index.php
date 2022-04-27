@@ -45,7 +45,12 @@
 		<?php  
 			if(isset($_POST['enter'])) {  
 				$userGuess = $_POST['guess'];   
-				$ranNumber = rand(1, 6)
+				$ranNumber = rand(1, 6);
+				if ($userGuess == $ranNumber) {
+					echo "<br><br>The number was" . $ranNumber . "You correctly guessed the number! Good job.";
+				} else {
+					echo "<br><br>The number was" . $ranNumber ." You did not guess the number. Try again next time.";
+				}
 			}
 		?>
 	</body>
