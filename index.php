@@ -32,7 +32,7 @@
 			echo '<center><h1>Guess The Number</h1></center>';
 			echo '<img src="./images/Guess.jpeg" width="15%"/>';
 			echo '<center><p>The computer generated a random number from 1 to 6. Try to guess it!</p>';
-			echo "<p><center>Enter your guess below and find out if you were correct.</p>"; 
+			echo "<center><p>Enter your guess below and find out if you were correct.</p>"; 
 		?>
 		<!-- Textfields -->
 		<form method = "post">   
